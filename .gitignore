@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+
+# iCloud placeholder stubs (should never be here, but just in case)
+*.icloud
+
+# sync conflict copies (iCloud / Dropbox / etc.)
+* [0-9].md
+*conflicted copy*
+
+# Obsidian: keep config, drop per-machine workspace/cache
+.obsidian/workspace*
+.obsidian/cache
+.trash/
