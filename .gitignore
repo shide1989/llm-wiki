@@ -12,3 +12,37 @@
 .obsidian/workspace*
 .obsidian/cache
 .trash/
+
+# --- macOS resource-fork / metadata cruft (litters synced + external volumes) ---
+._*
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+.fseventsd
+.DocumentRevisions-V100
+.TemporaryItems
+
+# --- Obsidian: keep the declarative config (app/appearance/hotkeys/*-plugins.json),
+#     drop the re-downloadable dirs. A plugin's data.json can hold API keys ->
+#     committing plugins/ is how people leak secrets to a public repo. ---
+.obsidian/plugins/
+.obsidian/themes/
+
+# --- agent local overrides (machine- or user-specific, sometimes secret-bearing) ---
+.claude/settings.local.json
+CLAUDE.local.md
+.codex/
+.aider*
+
+# --- secrets ---
+.env
+.env.*
+!.env.example
+
+# --- local tooling, IF you build a wiki search/CLI in-repo (py / node / rust) ---
+__pycache__/
+*.pyc
+.venv/
+node_modules/
+target/
